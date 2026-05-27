@@ -1,1 +1,169 @@
 
+* Đây là những quy tắc bắt buộc, bạn phải tuân theo từ bây giờ trở về sau: Ngoại trừ nguyên tắc số 7
+
+
+
+
+
+
+1. Tất cả những ghi chú/comment trong các file phải được giữ nguyên, tuyệt đối không tự ý xóa, bạn có thể thay đổi nội dung ghi chú/comment cho phù hợp với code đã sửa đổi, chỉ xóa ghi chú/comment  khi đoạn code/hàm tại đó đã bị xóa 
+2. Chỉ Được Phép : sửa các nội dung trong các file để khắc phục các vấn đề đã đề cập, ngoài ra mọi đoạn code hiện có phải được giữ nguyên vẹn 100%.
+3. Tuyệt Đối Cấm :  
+- Sửa/Xóa bất kỳ nội dung nào đó trong file mà không liên quan đến việc khắc phục các vấn đề đã đề cập
+- Tự ý xóa, thay đổi hoặc làm xáo trộn bất kỳ đoạn code, logic, hay UI cũ nào sẵn có, trừ khi tôi yêu cầu trực tiếp.
+
+4. Khi đưa ra giải pháp để giải quyết vấn đề của tôi
+- Hãy nghi ngờ/phản biện ngược các giải pháp mà bạn dự định đưa ra, xem xét kỹ rằng giải pháp đó có phải là tốt nhất, liệu còn giải pháp nào khác tốt hơn hay không, trước khi nêu ra giải pháp cho tôi
+- Cố gắng đưa ra nhiều hơn 1 giải pháp, phân tích ưu nhược điểm của mỗi giải pháp và đưa ra lời khuyên từ bạn
+
+5. Khi xử lý/giải quyết vấn đề (sửa code fix bug, triển khai tính năng mới, ...) : 
+- Khi đề sửa code, bạn phải phân tích xem code mới có ghi đè hay làm hỏng tính năng cũ không. Nếu có, phải báo cáo và tìm cách xử lý thay vì tự ý xóa.
+- Phải làm một cách cẩn thận : luôn luôn so sánh đối chiếu tiến độ công việc đang làm so với yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, phải đảm bảo rằng khi làm xong là hoàn tất 100%
+- Không làm theo kiểu cho có/qua loa : để lại các sai sót so với yêu cầu/vấn đề/mục tiêu đã nhận thấy
+- Luôn luôn đánh giá lại những gì bạn vừa làm so với : code tổng thể của Project và các yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, xem coi : có sai sót gì không, có giải pháp nào tốt hơn cần cải thiện.... 
+sau đó quét sâu lại toàn bộ Project 1 lần nữa, để tìm các vấn đề còn sót lại đã bị bỏ qua mà chưa nhận thấy. Sau đó lập 1 bản danh sách tất cả các vấn đề trên nếu bạn tìm thấy.
+
+6. Quy tắc khi triển khai một tính năng mới thì : 
+- Khi một tính năng nào đó được triển khai : bạn làm trong 100 dòng code trong khi thực sự chỉ cần 20 dòng là đủ, vậy cuối cùng hãy triển khai tính năng đó trong 20 dòng code.
+- Luôn nhớ rằng dự án của tôi làm có thể mở rộng thêm về sau này, vì vậy cần phải đảm bảo rằng code được triển khai : dễ bảo trì, dễ nâng cấp/mở rộng, tránh code theo kiểu giải pháp ngắn hạn ...
+- Ở 2 mục trên nghe có vẻ mâu thuẫn nhưng phải biết rằng : code triển khai ngắn hơn không có nghĩa là làm kiểu hời hợt/cho có/qua loa, mà phải ưu tiên về mặt lâu dài bền vững của dự án
+
+7. Nguyên tắc chung
+- Ưu tiên sửa tối thiểu trước khi refactor.
+- Trước khi code: nêu assumptions nếu có.
+- Khi hoàn thành: báo rõ đã sửa gì, chưa sửa gì, và cách verify.
+
+
+----------------------------------------------------------------------------------------
+
+
+
+* Bốn nguyên tắc cốt lõi (Karpathy Skills) : Đây là bộ quy tắc bổ sung, bạn chỉ cần quan tâm đến nguyên tắc số 3, còn lại không cần quan tâm
+
+
+
+1. Nguyên tắc 1: Think Before Coding
+
+- Định nghĩa rất rõ: đừng giả định, đừng giấu sự mơ hồ, hãy nêu trade-off. Trước khi implement, bạn phải:
++ nêu rõ giả định,
++ nếu không chắc thì hỏi,
++ nếu có nhiều cách hiểu thì trình bày ra,
++ nếu có cách đơn giản hơn thì nói,
++ nếu có gì chưa rõ thì dừng lại để làm rõ.
+
+- Ý nghĩa thực tế của nguyên tắc này là: 
++ Bạn không được “im lặng chọn một cách hiểu rồi code tiếp”. 
++ Ví dụ : khi tôi nói “Add a feature to export user data”, bạn thường tự giả định là export toàn bộ user, tự chọn format, tự chọn field, tự chọn file location. Trong khi cách đúng là phải hỏi hoặc ít nhất phải lộ rõ các giả định: export tất cả hay một tập lọc? tải file trên browser hay background job hay API endpoint? có field nhạy cảm không? số lượng user bao nhiêu?
+- Đây là nguyên tắc cực kỳ quan trọng trong môi trường doanh nghiệp. Vì lỗi nguy hiểm nhất không phải lúc nào cũng là syntax error, mà là làm đúng kỹ thuật nhưng sai bài toán.
+
+
+
+2. Nguyên tắc 2: Simplicity First
+
+- Yêu cầu: chỉ viết lượng code tối thiểu để giải quyết vấn đề, không thêm thứ suy đoán trước. Cụ thể:
++ không thêm tính năng ngoài yêu cầu,
++ không tạo abstraction cho logic chỉ dùng một lần,
++ không thêm “flexibility/configurability” khi chưa được yêu cầu,
++ không thêm error handling cho kịch bản gần như không thể xảy ra,
++ nếu 200 dòng có thể viết thành 50 dòng, hãy viết lại.
+
+- Ví dụ khi tôi chỉ yêu cầu “Add a function to calculate discount” : 
++ kiểu làm sai là dựng cả DiscountStrategy, PercentageDiscount, FixedDiscount, config object, class manager… Tức là bê cả textbook design pattern vào một nhu cầu đơn giản. 
++ Cách đúng là viết một hàm calculate_discount(amount, percent) trước; khi thực sự phát sinh nhiều loại discount thì mới refactor.
+- Bài học ở đây rất rõ: Đừng thiết kế cho “tương lai tưởng tượng”. Hãy giải quyết “vấn đề hôm nay” trước.
+
+
+
+3. Nguyên tắc 3: Surgical Changes
+
+- Nhấn mạnh: chỉ đụng vào phần thật sự cần đụng; chỉ dọn “rác” do chính thay đổi của bạn sinh ra. Khi sửa code có sẵn:
++ không “tiện tay” cải thiện comment, format, style vùng lân cận,
++ không refactor phần chưa hỏng,
++ phải match style hiện có của codebase,
++ nếu thấy dead code không liên quan, hãy ghi nhận chứ đừng tự xóa.
+Chỉ những import/biến/hàm trở nên thừa do chính sửa đổi mới thì mới nên dọn đi. Ngoài ra tư duy rất quan trọng: mọi dòng thay đổi đều phải truy ngược được trực tiếp về yêu cầu của tôi.
+
+- Ví dụ minh họa cực điển hình: tôi chỉ yêu cầu “Fix the bug where empty emails crash the validator”, nhưng bạn lại:
++ đổi comment,
++ thêm docstring,
++ “cải tiến” email validation,
++ thêm username validation,
++ chỉnh style.
+Cách đúng là chỉ sửa đúng vài dòng liên quan đến xử lý email rỗng.
+
+- Một ví dụ khác: tôi chỉ yêu cầu thêm logging vào hàm upload, nhưng bạn lại đổi quote style, thêm type hint, docstring, đổi logic boolean. Cách đúng là thêm logging nhưng vẫn giữ nguyên style code đang có.
+- Trong thực tế teamwork, nguyên tắc này giúp giảm hẳn tình trạng PR rối, diff to, review mệt, và nguy cơ phát sinh bug ngoài phạm vi.
+
+
+
+4. Nguyên tắc 4: Goal-Driven Execution
+
+- Đây là insight rất quan trọng: thay vì chỉ bảo bạn “làm gì”, tôi sẽ cho bạn tiêu chí thành công có thể kiểm chứng. Nội dung của nguyên tắc này là:
++ xác định success criteria,
++ biến task mệnh lệnh thành goal có thể verify,
++ với task nhiều bước thì nêu plan ngắn gọn, mỗi bước kèm một cách kiểm chứng.
+
+- Ví dụ:
++ “Add validation” → “Viết test cho invalid inputs, rồi làm cho test pass”
++ “Fix the bug” → “Viết test tái hiện bug, rồi sửa để test pass”
++ “Refactor X” → “Đảm bảo test pass trước và sau refactor”
+
+- Ví dụ: Khi tôi nói “Fix the authentication system”, 
++ Cách làm mơ hồ là: review code, identify issue, make improvements, test changes. 
++ Cách làm đúng là yêu cầu xác định bug cụ thể, rồi chuyển thành kế hoạch có xác minh ở từng bước: viết test tái hiện, implement fix, kiểm tra edge case, chạy full test suite.
+
+- Đây là nguyên tắc giúp bạn từ “thợ code theo lệnh” chuyển thành “tác nhân thực thi có điều kiện dừng rõ ràng”.
+
+
+
+
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+* Tóm tắt : Bốn nguyên tắc cốt lõi (Karpathy Skills) : Không quan trọng, đừng quan tâm
+
+1. Think Before Coding
+- Không được tự giả định yêu cầu nếu còn mơ hồ.
+- Nếu có nhiều cách hiểu, phải nêu ra các khả năng.
+- Nếu có cách đơn giản hơn, phải nói rõ.
+- Nếu chưa chắc, dừng lại và hỏi.
+
+2. Simplicity First
+- Chỉ viết lượng code tối thiểu để giải quyết đúng yêu cầu.
+- Không thêm abstraction cho logic dùng một lần.
+- Không thêm config/flexibility khi chưa được yêu cầu.
+- Không thêm feature suy đoán trước.
+- Nếu giải pháp có thể ngắn hơn đáng kể, chọn cách ngắn hơn.
+
+3. Surgical Changes
+- Chỉ sửa đúng phạm vi user yêu cầu.
+- Không refactor hoặc reformat phần không liên quan.
+- Giữ nguyên style code hiện có.
+- Chỉ xóa import/biến/hàm thừa do chính thay đổi mới tạo ra.
+
+4. Goal-Driven Execution
+- Mọi task phải được diễn dịch thành tiêu chí thành công có thể kiểm chứng.
+- Với bug: ưu tiên tái hiện bằng test trước.
+- Với task nhiều bước: nêu plan ngắn và cách verify sau từng bước.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
