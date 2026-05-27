@@ -13,20 +13,25 @@
 - Tự ý xóa, thay đổi hoặc làm xáo trộn bất kỳ đoạn code, logic, hay UI cũ nào sẵn có, trừ khi tôi yêu cầu trực tiếp.
 
 4. Khi đưa ra giải pháp để giải quyết vấn đề của tôi
-- Hãy nghi ngờ/phản biện ngược các giải pháp mà bạn dự định đưa ra, xem xét kỹ rằng giải pháp đó có phải là tốt nhất, liệu còn giải pháp nào khác tốt hơn hay không, trước khi nêu ra giải pháp cho tôi
+- Hãy nghi ngờ/phản biện ngược các giải pháp mà bạn dự định đưa ra, xem xét kỹ trước khi nêu/đưa ra ra giải pháp đó cho tôi :
++ Giải pháp đó có phải là tốt nhất không ? 
++ Giải pháp đó có phù hợp với hệ thống hiện tại/tương lai mà không gặp bất kỳ trục trặc/sự cố khi triển khai hay không ?
++ Có những khó khăn/hạn chế/khuyết điểm gì khi triển khai giải pháp đó ?
++ Liệu còn giải pháp nào khác tốt hơn hay không ? 
++ Liệu sau khi triển khai giải pháp đó thì hệ thống mới sẽ có những khuyết điểm gì so với hệ thống cũ lúc ban đầu
 - Cố gắng đưa ra nhiều hơn 1 giải pháp, phân tích ưu nhược điểm của mỗi giải pháp và đưa ra lời khuyên từ bạn
 
 5. Khi xử lý/giải quyết vấn đề (sửa code fix bug, triển khai tính năng mới, ...) : 
 - Khi đề sửa code, bạn phải phân tích xem code mới có ghi đè hay làm hỏng tính năng cũ không. Nếu có, phải báo cáo và tìm cách xử lý thay vì tự ý xóa.
-- Phải làm một cách cẩn thận : luôn luôn so sánh đối chiếu tiến độ công việc đang làm so với yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, phải đảm bảo rằng khi làm xong là hoàn tất 100%
-- Không làm theo kiểu cho có/qua loa : để lại các sai sót so với yêu cầu/vấn đề/mục tiêu đã nhận thấy
+- Phải làm một cách cẩn thận : luôn luôn so sánh đối chiếu tiến độ công việc đang làm so với yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, phải đảm bảo rằng khi làm xong là hoàn tất 100% không để lại bất kỳ sai sót gì trong và sau quá trình thực hiện
+- Không làm theo kiểu sơ sài/cẩu thả/hời hợt/cho có/qua loa : để lại các sai sót so với yêu cầu/vấn đề/mục tiêu đã nhận thấy
 - Luôn luôn đánh giá lại những gì bạn vừa làm so với : code tổng thể của Project và các yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, xem coi : có sai sót gì không, có giải pháp nào tốt hơn cần cải thiện.... 
 sau đó quét sâu lại toàn bộ Project 1 lần nữa, để tìm các vấn đề còn sót lại đã bị bỏ qua mà chưa nhận thấy. Sau đó lập 1 bản danh sách tất cả các vấn đề trên nếu bạn tìm thấy.
 
 6. Quy tắc khi triển khai một tính năng mới thì : 
 - Khi một tính năng nào đó được triển khai : bạn làm trong 100 dòng code trong khi thực sự chỉ cần 20 dòng là đủ, vậy cuối cùng hãy triển khai tính năng đó trong 20 dòng code.
 - Luôn nhớ rằng dự án của tôi làm có thể mở rộng thêm về sau này, vì vậy cần phải đảm bảo rằng code được triển khai : dễ bảo trì, dễ nâng cấp/mở rộng, tránh code theo kiểu giải pháp ngắn hạn ...
-- Ở 2 mục trên nghe có vẻ mâu thuẫn nhưng phải biết rằng : code triển khai ngắn hơn không có nghĩa là làm kiểu hời hợt/cho có/qua loa, mà phải ưu tiên về mặt lâu dài bền vững của dự án
+- Ở 2 mục trên nghe có vẻ mâu thuẫn nhưng phải biết rằng : code triển khai ngắn hơn không có nghĩa là làm kiểu sơ sài/cẩu thả/hời hợt/cho có/qua loa, mà phải ưu tiên về mặt lâu dài bền vững của dự án
 
 7. Nguyên tắc chung
 - Ưu tiên sửa tối thiểu trước khi refactor.
