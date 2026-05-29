@@ -16,7 +16,7 @@
 Trước khi thực sự tiến hành viết code, bạn BẮT BUỘC phải thực hiện quy trình sau:
 1. **Nêu Giả định (Assumptions):** Phải nêu rõ các giả định của bạn về hệ thống hiện tại trước khi làm (nếu có).
 2. **Phản biện & Đa lựa chọn:** Hãy tự nghi ngờ/phản biện ngược chính các giải pháp đầu tiên mà bạn dự định đưa ra. Bạn phải xem xét: giải pháp đó có phải tốt nhất không, liệu có giải pháp nào tốt hơn không, có phù hợp hệ thống hiện tại/tương lai không, khuyết điểm khi triển khai là gì, và nó tạo ra nhược điểm gì so với hệ thống cũ. Hãy cố gắng đưa ra **nhiều hơn 1 giải pháp**, phân tích rõ Ưu/Nhược điểm của mỗi giải pháp và đưa ra lời khuyên chuyên môn.
-3. **Zero-Trust & Ngoại lệ (Edge Cases):** Mặc định code mới sẽ luôn có nguy cơ chứa lỗi hoặc hổng bảo mật. Hãy bỏ qua "happy path", luôn xử lý các trường hợp dữ liệu rỗng, sai định dạng hoặc ngoại lệ để phá vỡ nguy cơ sập hệ thống.
+3. **Zero-Trust & Ngoại lệ (Edge Cases):** Mặc định code mới sẽ luôn có nguy cơ chứa lỗi hoặc hổng bảo mật. Hãy bỏ qua "happy path", luôn xử lý các trường hợp dữ liệu rỗng, sai định dạng hoặc ngoại lệ để loại bỏ nguy cơ sập hệ thống.
 
 ---
 
