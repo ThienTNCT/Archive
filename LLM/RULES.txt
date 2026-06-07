@@ -28,11 +28,12 @@
 - Luôn luôn đánh giá lại những gì bạn vừa làm so với : code tổng thể của Project và các yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, xem coi : có sai sót gì không, có giải pháp nào tốt hơn cần cải thiện.... 
 sau đó quét sâu lại toàn bộ Project 1 lần nữa, để tìm các vấn đề còn sót lại đã bị bỏ qua mà chưa nhận thấy. Mọi vấn đề mà bạn tìm thấy phải trải qua một quy trình xác minh có bằng chứng/căn cứ rõ ràng dựa trên so sánh/đối chiếu có dẫn chứng cụ thể, tuyệt đối không tự phán đoán/suy diễn mơ hồ (mà không thực sự có bằng chứng/căn cứ rõ ràng) vô căn cứ. Sau đó lập 1 bản danh sách tất cả các vấn đề trên (đã qua xác minh) nếu bạn tìm thấy.
 
-6. Quy tắc khi triển khai một tính năng mới thì : 
-- Khi một tính năng nào đó được triển khai : bạn làm trong 100 dòng code trong khi thực sự chỉ cần 20 dòng là đủ, vậy cuối cùng hãy triển khai tính năng đó trong 20 dòng code.
-- Luôn nhớ rằng dự án của tôi làm có thể mở rộng thêm về sau này, vì vậy cần phải đảm bảo rằng code được triển khai : dễ bảo trì, dễ nâng cấp/mở rộng, tránh code theo kiểu giải pháp ngắn hạn ...
-- Ở 2 mục trên nghe có vẻ mâu thuẫn nhưng phải biết rằng : code triển khai ngắn hơn không có nghĩa là làm kiểu sơ sài/cẩu thả/hời hợt/cho có/qua loa, mà phải ưu tiên về mặt lâu dài bền vững của dự án
-
+6. Quy tắc khi triển khai một tính năng mới (Tiêu chuẩn Enterprise E-commerce) : 
+- Mọi tính năng triển khai phải hướng tới sự hoàn hảo dài hạn, đảm bảo tính mở rộng (Scalability). Bắt buộc tuân thủ Clean Code (Mã sạch) và nguyên tắc SOLID.
+- Áp dụng Nguyên tắc 7/3: Ưu tiên DRY (Don't Repeat Yourself - 70%) >> KISS (Keep It Simple, Stupid - 30%). Việc copy-paste code để cho nhanh là một thói quen xấu (vi phạm DRY), vì nếu sau này có thêm bảng/tính năng mới, việc lặp code sẽ làm file phình to và rất khó bảo trì/khó nâng cấp/khó mở rộng. Tuy nhiên, không quá cực đoan dùng DRY mọi lúc mọi nơi nếu nó không thực sự cần thiết.
+- Hạn chế & Tuyệt đối cấm: Cấm code theo kiểu việc "ghi cứng" (Hardcode) lặp đi lặp lại. Cấm mọi giải pháp theo kiểu: Chắp vá/tạm bợ/chữa cháy/tạm thời giải pháp ngắn hạn.
+- Khi một tính năng nào đó được triển khai : bạn làm trong 100 dòng code trong khi thực sự chỉ cần 20 dòng là đủ, vậy cuối cùng hãy triển khai tính năng đó trong 20 dòng code. Ngắn gọn nhưng không có nghĩa là làm kiểu sơ sài/cẩu thả/hời hợt/cho có/qua loa, mà phải ưu tiên về mặt lâu dài bền vững của dự án.
+  
 7. Nguyên tắc chung
 - Ưu tiên sửa tối thiểu trước khi refactor.
 - Trước khi code: nêu assumptions nếu có.
