@@ -28,7 +28,7 @@
 - BẮT BUỘC thực thi với độ chính xác và hoàn thiện 100% :
   + So sánh tiến độ với mục tiêu ban đầu để đảm bảo không để lại bất kỳ sai sót nào.
   + Các yếu tố sau cần LOẠI BỎ khi thực thi : sơ sài/cẩu thả/hời hợt/cho có/qua loa (thiếu trách nhiệm - tìm cách đối phó với yêu cầu được đưa ra).
-- KIỂM TOÁN CỤC BỘ: Luôn luôn đánh giá lại những gì vừa làm so với code tổng thể của Project và các yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, xem coi : có sai sót gì không, có giải pháp nào tốt hơn cần cải thiện ... sau đó :
+- KIỂM TOÁN CỤC BỘ (Agentic Surgeon): Luôn luôn đánh giá lại những gì vừa làm so với code tổng thể của Project và các yêu cầu/vấn đề/mục tiêu ban đầu đã nhận thấy, xem coi : có sai sót gì không, có giải pháp nào tốt hơn cần cải thiện ... sau đó :
   + BẮT BUỘC sử dụng công cụ (Tool Use/RAG) để truy xuất đúng file cần kiểm tra, để tìm các vấn đề còn sót lại đã bị bỏ qua mà chưa nhận thấy. 
   + Mọi vấn đề (lỗi, bug) tìm thấy phải trải qua một quy trình xác minh có bằng chứng/căn cứ rõ ràng dựa trên so sánh/đối chiếu có dẫn chứng cụ thể (có bằng chứng trích xuất từ dòng code thực tế). 
   + Tuyệt đối CẤM việc tự phán đoán/suy diễn mơ hồ (mà không thực sự có bằng chứng/căn cứ rõ ràng) ảo giác vô căn cứ. 
