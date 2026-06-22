@@ -1,11 +1,18 @@
-* Đây là luồng làm việc dành cho các trợ lý, các trợ lý phải đọc hiểu rõ và làm cho đúng với yêu cầu trong này.
+* Đây là luồng làm việc dành cho các Trợ Lý, các Trợ Lý phải đọc hiểu rõ và làm cho đúng với yêu cầu trong này.
 
+
+
+* Quy trình làm việc này yêu cầu bắt buộc mỗi Trợ Lý (Assistant) phải có một Danh Tính (Identity) riêng, vì vậy mỗi Trợ Lý phải tự
+
+1. Xem coi bản thân đã có danh tính hay chưa, nếu chưa có thì yêu cầu Người Dùng (User) cấp danh tính, để điền vào mục 1 (danh sách danh tính) bên dưới.
+
+2. Kiểm tra mục 1 (danh sách danh tính) bên dưới, xem coi đã có đúng chính xác danh tính của mình hay chưa, nếu chưa thì tự điền vào, nếu có rồi thì có thể bắt đầu 
 
 
 
 * Để Phase 2 (trở về sau) làm việc hiệu quả hơn, tôi quyết định:
 
-1. Để rõ ràng danh sách tên các trợ lý (mỗi trợ lý phải tự nắm rõ danh tính của bản thân)
+1. Để rõ ràng danh sách danh tính các trợ lý (mỗi trợ lý phải tự nắm rõ danh tính của bản thân)
 - Trợ lý 1 - Claude Opus: Implementing Search And Filtering
 - Trợ lý 2 - Gemini Pro: Eshop Architecture Codebase Audit
 - Trợ lý 3 - Gemini Pro: Eshop System Codebase Review
@@ -23,16 +30,23 @@
 
 
 3. Việc hội thoại chung :  
-- Tất cả các trợ lý phải phản hồi vào tệp Note14.md
+- Tất cả các trợ lý phải phản hồi vào tệp "Note14.md"
 - Mục đích là gì? Các trợ lý sẽ đọc được nội dung giao tiếp của nhau, để hiểu rõ lẫn nhau.
 - Quyền hạn : C (Ghi thêm), R (Đọc) 
   
 - Quy tắc phản hồi là :
- + Danh tính : Ghi rõ danh tính ở phần đầu của mỗi lượt phản hồi
+ + Danh tính : Ghi rõ danh tính ở phần đầu ([Identity: ...]) của mỗi lần phản hồi
  + Cách thức : Các Trợ Lý khi nhận được phản hồi của tôi, thay vì trả lời trực tiếp cho tôi, thì phải ghi nội dung phản hồi vào tệp "Note14.md". 
- + Cách ghi : Nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu : NGAY BÊN DƯỚI của phản hồi trước và CHỈ được ghi vào KHI chỗ phản hồi dành cho trợ lý TRỐNG RỖNG. 
+ + Cách ghi : Nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu : NGAY BÊN DƯỚI của phản hồi trước (đã có sẵn) và CHỈ được ghi vào KHI chỗ phản hồi dành cho trợ lý (Assistant [Identity: ...]) TRỐNG RỖNG. 
  
-- Lưu Ý : File Note14.md cũng dành cho các việc như : Lập bản kế hoạch tạm thời phác thảo, bản kiểm toán, ... cứ viết thẳng vào file này như thể là một cuộc hội thoại/chat phản hồi.
+- Lưu Ý : File "Note14.md" cũng dành cho các việc như : Lập bản kế hoạch tạm thời phác thảo, bản kiểm toán, báo cáo, etc ... cứ viết thẳng vào file này như thể là một cuộc hội thoại/chat phản hồi.
 
 - Ngoại lệ : Trợ lý 4 sẽ do tôi trực tiếp quản lý (Trong Note14.md)
+
+
+
+* Ngoài ra quy trình làm việc này cũng yêu cầu các Trợ Lý phải tuân thủ nghiêm ngặt tất cả nội dung có trong "RULES.md"
+
+
+
 
