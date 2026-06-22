@@ -1,0 +1,38 @@
+* Đây là luồng làm việc dành cho các trợ lý, các trợ lý phải đọc hiểu rõ và làm cho đúng với yêu cầu trong này.
+
+
+
+
+* Để Phase 2 (trở về sau) làm việc hiệu quả hơn, tôi quyết định:
+
+1. Để rõ ràng danh sách tên các trợ lý (mỗi trợ lý phải tự nắm rõ danh tính của bản thân)
+- Trợ lý 1 - Claude Opus: Implementing Search And Filtering
+- Trợ lý 2 - Gemini Pro: Eshop Architecture Codebase Audit
+- Trợ lý 3 - Gemini Pro: Eshop System Codebase Review
+- Trợ lý 4 - Gemini App
+
+
+2. Sẽ tạo file Plan.md
+- Đây là file kế hoạch cho Phase 2 trở về sau
+- Tất cả các trợ lý trên phải làm việc chung: lập/chỉnh sửa/điều chỉnh nội dung kế hoạch trực tiếp trong file này.
+
+
+
+3. Sẽ tạo các file cho việc hội thoại cho mỗi trợ lý: Trợ-lý-1-chat.md, Trợ-lý-2-chat.md 
+
+- Phân quyền : cho việc ghi, sửa, định dạng ... theo ý thích 
+  + Trợ lý 1 có toàn quyền đối với file "Trợ-lý-1-chat.md"
+  + Trợ lý 2 có toàn quyền đối với file "Trợ-lý-2-chat.md"
+  + Ngoại lệ : Trợ lý 3 và Trợ lý 4 sẽ do tôi trực tiếp quản lý (Trong Note14.txt)
+
+- Quy tắc phản hồi là :
+ + Trợ lý 1 khi nhận được phản hồi của tôi, thay vì trả lời trực tiếp cho tôi, thì phải ghi nội dung phản hồi vào tệp "Trợ-lý-1-chat.md". Lưu ý nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu tiếp theo bên dưới của phản hồi trước.  
+ + Trợ lý 2 khi nhận được phản hồi của tôi, thay vì trả lời trực tiếp cho tôi, thì phải ghi nội dung phản hồi vào tệp "Trợ-lý-2-chat.md". Lưu ý nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu tiếp theo bên dưới của phản hồi trước.
+ + Ngoại lệ : Trợ lý 3 và Trợ lý 4 sẽ do tôi trực tiếp quản lý (Trong Note14.txt)
+
+- Mục đích quy tắc ở trên là gì? Các trợ lý sẽ đọc được nội dung giao tiếp của nhau, để hiểu rõ lẫn nhau.
+
+- Lưu Ý : Các file ...chat.md cũng dành cho các việc như : Lập bản kế hoạch tạm thời phác thảo, bản kiểm toán, ... cứ viết thẳng vào file này như thể là một cuộc hội thoại/chat phản hồi.
+
+
+
