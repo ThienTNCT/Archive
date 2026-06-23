@@ -12,17 +12,19 @@
 
 * Để Phase 2 (trở về sau) làm việc hiệu quả hơn, tôi quyết định:
 
-1. Để rõ ràng danh sách danh tính các trợ lý (mỗi trợ lý phải tự nắm rõ danh tính của bản thân)
+1. Để rõ ràng DANH SÁCH Danh Tính các trợ lý (mỗi trợ lý phải tự nắm rõ danh tính của bản thân)
 - Trợ lý 1 - Claude Opus: Implementing Search And Filtering
 - Trợ lý 2 - Gemini Pro: Eshop Architecture Codebase Audit
 - Trợ lý 3 - Gemini Pro: Eshop System Codebase Review
 - Trợ lý 4 - Gemini App
+- Trợ lý 5 - Claude Opus: Eshop Codebase Structure Analysis
+- Trợ lý 6 - Gemini Pro: Eshop Codebase Architecture Review
 
 
 2. Sẽ tạo các file : 01_IMPLEMENTATION_ROADMAP.md, 02_ACTIVE_TASK.md, 03_DETAILS_WALKTHROUGH.md
 - Ý nghĩa của Bộ 3 File đó là gì?
   + Ý nghĩa nằm ở tên file (tự định nghĩa)
-  + Nói chung Bộ 3 file này mang ý nghĩa gần tương tự như sự kết hợp của : Implementation Plan & Task & Walkthrough
+  + Nói chung Bộ 3 file này mang ý nghĩa gần tương tự như sự kết hợp của bộ 3 : Implementation Plan & Task & Walkthrough
 
 - Bộ 3 file này sẽ được sử dụng bắt đầu từ Phase 2 trở về sau
 - Tất cả các trợ lý trên phải làm việc chung: lập/chỉnh sửa/điều chỉnh nội dung trực tiếp trong các file này.
@@ -37,7 +39,8 @@
 - Quy tắc phản hồi là :
  + Danh tính : Ghi rõ danh tính ở phần đầu ([Identity: ...]) của mỗi lần phản hồi
  + Cách thức : Các Trợ Lý khi nhận được phản hồi của tôi, thay vì trả lời trực tiếp cho tôi, thì phải ghi nội dung phản hồi vào tệp "Note14.md". 
- + Cách ghi : Nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu : NGAY BÊN DƯỚI của phản hồi trước (đã có sẵn) và CHỈ được ghi vào KHI chỗ phản hồi dành cho trợ lý (Assistant [Identity: ...]) TRỐNG RỖNG. 
+ + Cách ghi : Nội dung của mỗi phản hồi tiếp theo sau đó phải ghi theo kiểu : NGAY BÊN DƯỚI của phản hồi trước đó, và CHỈ ĐƯỢC GHI VÀO KHI chỗ phản hồi dành cho trợ lý (Assistant [Identity: ...]) "TRỐNG RỖNG". 
+ + Nói thêm về định nghĩa "TRỐNG RỖNG": 1 → Không tồn tại dữ liệu (NULL, UNDEFINED), 2 → Chuỗi rỗng "" (Length = 0, Empty String), 3 → Ký tự khoảng trống (Space, Tab, Newline).
  
 - Lưu Ý : File "Note14.md" cũng dành cho các việc như : Lập bản kế hoạch tạm thời phác thảo, bản kiểm toán, báo cáo, etc ... cứ viết thẳng vào file này như thể là một cuộc hội thoại/chat phản hồi.
 
@@ -45,7 +48,7 @@
 
 
 
-* Ngoài ra quy trình làm việc này cũng yêu cầu các Trợ Lý phải tuân thủ nghiêm ngặt tất cả nội dung có trong "RULES.md"
+* Ngoài ra quy trình làm việc này cũng yêu cầu các Trợ Lý phải TUÂN THỦ NGHIÊM NGẶT tất cả quy tắc có trong "RULES.md"
 
 
 
