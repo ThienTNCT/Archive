@@ -1,0 +1,16 @@
+# Đây là bản thiết kế tạm thời dành cho tệp : .gitignore , vì vậy cần phải đổi tên khi đưa vào sử dụng : gitignore.txt -> .gitignore 
+
+# 1. Bỏ qua tất cả các tệp có tên bắt đầu bằng "Note" (bất kể đuôi gì) ở thư mục gốc
+/Note*
+/*Note*
+
+# 2. Bỏ qua tất cả các tệp có chứa từ "RULES" hoặc "WORKFLOWS" ở thư mục gốc
+/*RULES*
+/*WORKFLOWS*
+
+# 3. Bỏ qua các tệp cụ thể nằm ngay tại thư mục gốc
+/Chat.txt
+/01_IMPLEMENTATION_ROADMAP.md
+/02_ACTIVE_TASK.md
+/03_DETAILS_WALKTHROUGH.md
+
