@@ -2,7 +2,6 @@
 
 # 1. Bỏ qua tất cả các tệp có tên bắt đầu bằng "Note" (bất kể đuôi gì) ở thư mục gốc
 /Note*
-/*Note*
 
 # 2. Bỏ qua tất cả các tệp có chứa từ "RULES" hoặc "WORKFLOWS" ở thư mục gốc
 /*RULES*
@@ -13,4 +12,10 @@
 /01_IMPLEMENTATION_ROADMAP.md
 /02_ACTIVE_TASK.md
 /03_DETAILS_WALKTHROUGH.md
+
+# 4. Khác
+/*Note*
+/*chat*
+/Antigravity.git.zip
+/GitHub.git.zip
 
